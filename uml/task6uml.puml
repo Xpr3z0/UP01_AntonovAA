@@ -1,0 +1,34 @@
+@startuml
+class t6.Task6 {
++ {static} void main(String[])
+}
+class t6.Word {
+- String word
++ boolean equals(Object)
++ int hashCode()
++ String toString()
+}
+class t6.Sentence {
+- List<Word> words
++ void addWord(Word)
++ boolean equals(Object)
++ int hashCode()
++ String toString()
+}
+class t6.Text {
+- List<Sentence> sentences
+- String title
++ void addSentence(Sentence)
++ void printText()
++ boolean equals(Object)
++ int hashCode()
++ String toString()
+}
+class t6.EmptyTextException {
+}
+
+
+t6.Exception <|-- t6.EmptyTextException
+t6.Sentence -- t6.Word
+t6.Text -- t6.Sentence
+@enduml

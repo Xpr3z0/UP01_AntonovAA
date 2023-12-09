@@ -1,0 +1,6 @@
+@startuml
+class t5.Task5 {
+- {static} String TEMPLATE_TEXT
++ {static} void main(String[])
+}
+@enduml

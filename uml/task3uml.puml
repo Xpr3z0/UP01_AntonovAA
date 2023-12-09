@@ -1,0 +1,27 @@
+@startuml
+class t3.Task3 {
++ {static} void main(String[])
+}
+class t3.Word {
+- String word
++ boolean equals(Object)
++ int hashCode()
++ String toString()
+}
+class t3.Sentence {
+- List<Word> words
++ void addWord(Word)
++ boolean equals(Object)
++ int hashCode()
++ String toString()
+}
+class t3.Text {
+- List<Sentence> sentences
+- String title
++ void addSentence(Sentence)
++ void printText()
++ boolean equals(Object)
++ int hashCode()
++ String toString()
+}
+@enduml

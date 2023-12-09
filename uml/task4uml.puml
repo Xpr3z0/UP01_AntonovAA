@@ -1,0 +1,20 @@
+@startuml
+class t4.Task4 {
++ void addNotes(Notepad)
++ {static} void main(String[])
+}
+class t4.Notepad {
+- Map<String,DayEntry> entries
++ void addEntry(String,String)
++ List<String> getEntries(String)
++ void printAllEntries()
+}
+class t4.Notepad$DayEntry {
+- List<String> notes
++ void addNote(String)
++ List<String> getNotes()
+}
+
+
+t4.Notepad +.. t4.Notepad$DayEntry
+@enduml

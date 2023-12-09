@@ -1,0 +1,40 @@
+@startuml
+class t2.Task2 {
+~ ArrayList<Student> students
+- void addStudents()
++ {static} void main(String[])
+}
+class t2.Student {
+~ int id
+~ String surname
+~ String name
+~ String patronymic
+~ String birthDate
+~ String address
+~ String phoneNumber
+~ String faculty
+~ int course
+~ String group
++ String getStudentInfo()
++ int getId()
++ void setId(int)
++ String getSurname()
++ void setSurname(String)
++ String getName()
++ void setName(String)
++ String getPatronymic()
++ void setPatronymic(String)
++ String getBirthDate()
++ void setBirthDate(String)
++ String getAddress()
++ void setAddress(String)
++ String getPhoneNumber()
++ void setPhoneNumber(String)
++ String getFaculty()
++ void setFaculty(String)
++ int getCourse()
++ void setCourse(int)
++ String getGroup()
++ void setGroup(String)
+}
+@enduml

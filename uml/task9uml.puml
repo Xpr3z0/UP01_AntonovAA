@@ -1,0 +1,32 @@
+@startuml
+class t9.Task9 {
+- {static} int GRID_SIZE
+- {static} int CARD_COUNT
+- List<Integer> cards
+- int[][] grid
+- GridPane gridPane
+- boolean playerTurn
+- int playerScore
+- int computerScore
+- VBox root
+- BorderPane rootBorderPane
++ {static} void main(String[])
++ void start(Stage)
+- void initializeGame()
+- List<Integer> generateCards()
+- VBox createStartScreen()
+- void startGame()
+- GridPane createGridPane()
+- void handleButtonClick(int,int)
+- void playComputerTurn()
+- void updateButton(int,int,int)
+- void calculateScore(int)
+- int calculateRowPoints()
+- int calculateColumnPoints()
+- int calculateDiagonalPoints()
+- int getRowPoints(int)
+- int getDiagonalPoints(int)
+- void showScores()
+- void endGame()
+}
+@enduml

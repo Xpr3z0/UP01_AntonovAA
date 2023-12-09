@@ -1,0 +1,16 @@
+@startuml
+class t8.Task8 {
+- String[] menuItems
+- int selectedIndex
+- boolean enterPressed
++ {static} void main(String[])
++ void start(Stage)
+- void init(String)
+- void drawMenu(HBox,Stage)
+- void handleKeyPress(KeyCode,Stage)
+- String select()
+- void leftBoard(int)
+- int len(int)
+- String whatSel()
+}
+@enduml
